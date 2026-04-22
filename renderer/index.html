@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Manager Controller</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Portfolio Manager Controller</h1>
+
+        <div class="card">
+            <h2>Frontend</h2>
+            <div class="button-row">
+                <button id="start-frontend">Start Frontend</button>
+                <button id="stop-frontend">Stop Frontend</button>
+            </div>
+            <p><strong>Status:</strong> <span id="frontend-status">Stopped</span></p>
+            <pre id="frontend-log" class="log-box">No logs yet...</pre>
+        </div>
+
+        <div class="card">
+            <h2>Backend</h2>
+            <div class="button-row">
+                <button id="start-backend">Start Backend</button>
+                <button id="stop-backend">Stop Backend</button>
+            </div>
+            <p><strong>Status:</strong> <span id="backend-status">Stopped</span></p>
+            <pre id="backend-log" class="log-box">No logs yet...</pre>
+        </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
